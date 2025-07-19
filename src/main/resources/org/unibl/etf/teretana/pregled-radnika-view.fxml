@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.unibl.etf.teretana.controller.PregledRadnikaController">
+    <top>
+        <Label text="Pregled radnika" style="-fx-font-size: 18px; -fx-padding: 10px;" />
+    </top>
+
+    <center>
+        <TableView fx:id="radniciTable" prefHeight="400" prefWidth="1000">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="50" />
+                <TableColumn fx:id="imeColumn" text="Ime" prefWidth="100" />
+                <TableColumn fx:id="prezimeColumn" text="Prezime" prefWidth="100" />
+                <TableColumn fx:id="korisnickoImeColumn" text="Korisnicko ime" prefWidth="120" />
+                <TableColumn fx:id="emailColumn" text="Email" prefWidth="150" />
+                <TableColumn fx:id="lozinkaColumn" text="Lozinka" prefWidth="100" />
+                <TableColumn fx:id="polColumn" text="Pol" prefWidth="80" />
+                <TableColumn fx:id="datumRodjenjaColumn" text="Datum rodjenja" prefWidth="120" />
+                <TableColumn fx:id="fkRadnikAdminNapravioColumn" text="Id Admina" prefWidth="80" />
+                <TableColumn fx:id="obrisiColumn" text="Obriši" prefWidth="80" />
+                <TableColumn fx:id="azurirajColumn" text="Ažuriraj" prefWidth="100" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10px;">
+            <Button text="Nazad" onAction="#handleNazad" />
+        </HBox>
+    </bottom>
+</BorderPane>

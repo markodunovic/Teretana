@@ -11,6 +11,7 @@ public class KorisnikDAO {
     public static List<Korisnik> getAllKorisnici() {
         List<Korisnik> korisnici = new ArrayList<>();
 
+        /*
         String query = "SELECT idKorisnika, Ime, Prezime, KorisnickoIme, Email FROM korisnik";
 
         try (Connection conn = DBConnection.getConnection();
@@ -31,6 +32,7 @@ public class KorisnikDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+         */
 
         return korisnici;
     }

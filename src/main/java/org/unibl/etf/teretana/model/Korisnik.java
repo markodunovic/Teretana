@@ -1,29 +1,27 @@
 package org.unibl.etf.teretana.model;
 
-public class Korisnik {
-    private int id;
-    private String ime;
-    private String prezime;
-    private String korisnickoIme;
-    private String email;
+import java.util.Date;
 
-    public Korisnik(int id, String ime, String prezime, String korisnickoIme, String email) {
+public class Korisnik {
+    protected int id;
+    protected String ime;
+    protected String prezime;
+    protected String korisnickoIme;
+    protected String email;
+    protected String lozinka;
+    protected boolean pol;
+    protected Date datumRodjenja;
+    protected boolean primajObavjestenja;
+
+    public Korisnik(int id, String ime, String prezime, String korisnickoIme, String email, String lozinka, boolean pol, Date datumRodjenja, boolean primajObavjestenja) {
         this.id = id;
         this.ime = ime;
         this.prezime = prezime;
         this.korisnickoIme = korisnickoIme;
         this.email = email;
+        this.lozinka = lozinka;
+        this.pol = pol;
+        this.datumRodjenja = datumRodjenja;
+        this.primajObavjestenja = primajObavjestenja;
     }
-
-    public int getId() { return id; }
-    public String getIme() { return ime; }
-    public String getPrezime() { return prezime; }
-    public String getKorisnickoIme() { return korisnickoIme; }
-    public String getEmail() { return email; }
-
-    public void setId(int id) { this.id = id; }
-    public void setIme(String ime) { this.ime = ime; }
-    public void setPrezime(String prezime) { this.prezime = prezime; }
-    public void setKorisnickoIme(String korisnickoIme) { this.korisnickoIme = korisnickoIme; }
-    public void setEmail(String email) { this.email = email; }
 }
